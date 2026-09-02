@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dosantos'Tech | La Tech avec une touche humaine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+    <!-- BARRE DE NAVIGATION -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center font-bold text-slate-950 text-xl shadow-lg shadow-amber-500/20">
+                        DT
+                    </div>
+                    <span class="text-2xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-amber-400 bg-clip-text text-transparent">
+                        Dosantos'Tech
+                    </span>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                    <a href="#accueil" class="hover:text-amber-400 transition-colors">Accueil</a>
+                    <a href="#apropos" class="hover:text-amber-400 transition-colors">À Propos</a>
+                    <a href="#services" class="hover:text-amber-400 transition-colors">Services</a>
+                    <a href="#temoignages" class="hover:text-amber-400 transition-colors">Témoignages</a>
+                    <a href="#contact" class="hover:text-amber-400 transition-colors">Contact</a>
+                </div>
+
+                <a href="#contact" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-bold bg-amber-500 hover:bg-amber-400 text-slate-950 transition-all shadow-md hover:shadow-amber-500/20">
+                    Nous contacter
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION HERO / ACCUEIL -->
+    <section id="accueil" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/20 via-slate-950 to-slate-950"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <span>La Tech avec une touche humaine</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                        Bienvenue chez <span class="text-amber-400">Dosantos'Tech</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 leading-relaxed max-w-2xl">
+                        Votre expert en tech avec une touche humaine. Nous simplifions la technologie pour que vous puissiez en profiter pleinement. Découvrez comment nous pouvons vous aider à optimiser vos appareils et maîtriser votre système d'exploitation facilement.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#contact" class="px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold shadow-lg shadow-amber-500/25 transition-all">
+                            Nous contacter
+                        </a>
+                        <a href="#services" class="px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold border border-slate-700 transition-all">
+                            Découvrir nos services
+                        </a>
+                    </div>
+                </div>
+
+                <!-- EMPLACEMENT PHOTO DE PROFIL -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-amber-500 to-amber-300 opacity-30 blur-xl"></div>
+                        <div class="relative bg-slate-900 border border-slate-800 rounded-3xl p-4 overflow-hidden shadow-2xl">
+                            <!-- Remplacez l'URL ci-dessous par le lien de votre photo de profil -->
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Victoire Dosantos" 
+                                 class="w-full h-96 object-cover rounded-2xl">
+                            <div class="p-4 text-center">
+                                <h3 class="text-xl font-bold text-white">Victoire Dosantos</h3>
+                                <p class="text-sm text-amber-400 font-medium">Fondateur & Spécialiste Solutions Numériques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION À PROPOS -->
+    <section id="apropos" class="py-20 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Découvrez l'univers de Dosantos'Tech</h2>
+                <p class="mt-4 text-slate-400">Une approche humaine de la technologie à votre service.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-400 text-xl font-bold mb-6">
+                        70%
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Expertise Autodidacte</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        <span class="font-bold text-amber-400">70% APPRIS SEUL, 100% POUR TOI.</span><br>
+                        70% de mes compétences, je les ai acquises par auto-formation, toujours prêt à apprendre davantage pour vous offrir le meilleur service.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-400 text-xl mb-6">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Mon Cockpit Tech</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        <span class="font-bold text-amber-400">SI TU NE METS PAS À JOUR TES COMPÉTENCES, C'EST LA TECHNOLOGIE QUI TE METTRA HORS SERVICE.</span><br>
+                        Entre mon MacBook Pro et mes modèles d'avions de guerre : pour voler haut, il faut savoir piloter.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-amber-500/50 transition-all">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-xl flex items-center justify-center text-amber-400 text-xl mb-6">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Passion pour l'innovation</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        <span class="font-bold text-amber-400">LE FUTUR APPARTIENT À CEUX QUI MAÎTRISENT LE CHANGEMENT.</span><br>
+                        Toujours à la recherche des dernières avancées, notamment en IA et nouvelles technologies, pour vous apporter des solutions modernes et performantes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION SERVICES -->
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Solutions Tech Sur-Mesure</h2>
+                <p class="mt-4 text-slate-400">Création d'applications, actualisation d'ordinateurs, formations et intelligence artificielle.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- SERVICE 1 -->
+                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-500/10 text-blue-400 rounded-xl flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Applications Mobiles & Web</h3>
+                        <p class="text-sm text-slate-400">
+                            Conception d'applications sur-mesure pour iOS et Android, alliant créativité, design moderne et performance optimale.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- SERVICE 2 -->
+                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Optimisation PC & Mac</h3>
+                        <p class="text-sm text-slate-400">
+                            Réinstallation, suppression de bugs, nettoyage de disque et mises à jour pour redonner une seconde jeunesse à vos ordinateurs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- SERVICE 3 -->
+                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-emerald-500/10 text-emerald-400 rounded-xl flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Formations pour Passionnés</h3>
+                        <p class="text-sm text-slate-400">
+                            Apprenez à maîtriser Windows, macOS ou les outils informatiques sans jargon technique. Aucun diplôme requis, seulement votre passion.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- SERVICE 4 -->
+                <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-purple-500/10 text-purple-400 rounded-xl flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">IA & Innovation</h3>
+                        <p class="text-sm text-slate-400">
+                            Intégration de Chatbots personnalisés, automatisation intelligente des processus et analyse de données pour booster votre activité.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TÉMOIGNAGES -->
+    <section id="temoignages" class="py-20 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Ce que nos clients disent de nous</h2>
+                <p class="mt-4 text-slate-400">Une confiance bâtie sur la qualité, la proximité et l'expertise humaine.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="flex text-amber-400 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4">"Service rapide et efficace. Grâce à Dosantos'Tech, j'ai retrouvé un ordinateur comme neuf en un rien de temps. Son professionnalisme est remarquable."</p>
+                    <span class="text-xs text-slate-500 font-semibold">— Client satisfait</span>
+                </div>
+
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="flex text-amber-400 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4">"Une formation claire et accessible chez Dosantos'Tech. Aucun diplôme n'est requis, la passion et la volonté d'apprendre suffisent."</p>
+                    <span class="text-xs text-slate-500 font-semibold">— Apprenant en formation</span>
+                </div>
+
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="flex text-amber-400 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4">"Un jeune ambitieux, passionné, attentif et toujours prêt à partager ses connaissances. Un vrai plus !"</p>
+                    <span class="text-xs text-slate-500 font-semibold">— Partenaire Tech</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Contactez-nous</h2>
+                <p class="mt-4 text-slate-400">Nous sommes situés au cœur de Kinshasa, prêts à vous accueillir pour tous vos besoins en tech.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- INFOS DE CONTACT -->
+                <div class="lg:col-span-5 bg-slate-900 p-8 rounded-2xl border border-slate-800 space-y-6">
+                    <h3 class="text-xl font-bold text-white">Nos Coordonnées</h3>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-amber-500/10 text-amber-400 rounded-lg flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Adresse</h4>
+                            <p class="text-sm text-slate-400">Avenue Djamena № 15, Q. Manenga, C. Ngaliema, Kinshasa, RDC</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-amber-500/10 text-amber-400 rounded-lg flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Téléphone / WhatsApp</h4>
+                            <p class="text-sm text-slate-400">+243 974 995 284</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 bg-amber-500/10 text-amber-400 rounded-lg flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">E-mail</h4>
+                            <p class="text-sm text-slate-400">victoiredosantos27@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-800">
+                        <h4 class="text-sm font-semibold text-white mb-2">Heures d'ouverture</h4>
+                        <p class="text-sm text-slate-400">Du lundi au vendredi : 09h00 - 17h00</p>
+                        <p class="text-sm text-slate-400">Samedi : 13h00 - 17h00</p>
+                    </div>
+                </div>
+
+                <!-- FORMULAIRE DE CONTACT WHATSAPP -->
+                <div class="lg:col-span-7 bg-slate-900 p-8 rounded-2xl border border-slate-800">
+                    <form onsubmit="sendToWhatsApp(event)" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 mb-1">Prénom</label>
+                                <input type="text" id="prenom" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 mb-1">Nom</label>
+                                <input type="text" id="nom" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-1">Votre E-mail</label>
+                            <input type="email" id="email" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-1">Comment puis-je vous aider ?</label>
+                            <textarea id="message" rows="4" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-amber-500/20">
+                            Envoyer le message sur WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-8 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© 2026 - Dosantos'Tech | La Tech avec une touche humaine</p>
+            <p class="mt-1">Kinshasa, République Démocratique du Congo</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT ENVOI DIRECT WHATSAPP -->
+    <script>
+        function sendToWhatsApp(e) {
+            e.preventDefault();
+            const prenom = document.getElementById('prenom').value;
+            const nom = document.getElementById('nom').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const text = `Bonjour Dosantos'Tech,%0A%0AJe m'appelle ${prenom} ${nom} (${email}).%0A%0A${message}`;
+            window.open(`https://wa.me/243974995284?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>
