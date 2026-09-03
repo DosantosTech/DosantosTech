@@ -377,6 +377,21 @@
             const text = `Bonjour Dosantos'Tech,%0A%0AJe m'appelle ${prenom} ${nom} (${email}).%0A%0A${message}`;
             window.open(`https://wa.me/243974995284?text=${text}`, '_blank');
         }
-    </script>
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Ouvre ou ferme le menu lors du clic sur le bouton ☰
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Ferme le menu automatiquement lorsqu'un lien est cliqué
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+</script>
 </body>
 </html>
